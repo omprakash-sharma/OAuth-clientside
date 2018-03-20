@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html data-ng-app="authApp">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OAuth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/controllers/mainController.js"></script>
+    <script src="app/controllers/landingController.js"></script>
+    <script src="app/services/storage-service.js"></script>
+    <base href="/">
+</head>
+<body>
+    <div class="container">
+        <div ng-view></div>
+    </div>
+</body>
+</html>
