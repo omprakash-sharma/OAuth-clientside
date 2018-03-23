@@ -1,0 +1,50 @@
+<div class="well clearfix">
+        <div class="left-section">
+            <form name="userLoginForm" ng-submit="signup()">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label class="label_txt">Name</label>
+                        <input type="text" name="userName" ng-model="mctrl.newUserInfo.name" class="cust_input" placeholder=""/>
+                    </div>
+                </div>
+                <div class="line-gap"></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label class="label_txt required">Email</label>
+                        <input type="email" name="userEmail" ng-model="mctrl.newUserInfo.email" class="cust_input" placeholder="" required/>
+                    </div>
+                </div>
+                <div class="line-gap"></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label class="label_txt required">Password</label>
+                        <input type="password" name="userPassword" ng-model="mctrl.newUserInfo.password" class="cust_input" placeholder="" required/>
+                    </div>
+                </div>
+                <div class="line-gap"></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label class="label_txt required">Re-Password</label>
+                        <input type="password" name="userConfirmPassword" ng-model="mctrl.newUserInfo.confirmPassword" class="cust_input" placeholder="" required/>
+                    </div>
+                </div>
+                <div class="line-gap"></div>
+                <div class="row">
+                    <div class="col-sm-12" style="text-align:right;">
+                        <a href="/login">existing user ?,login.</a>
+                    </div>
+                </div>
+                <div class="line-margin"></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button type="button" class="btn cust_btn default"><a href="/">Home</a></button>
+                        <button type="reset" class="btn cust_btn default">Reset</button>
+                        <button type="submit" class="btn cust_btn success" ng-disabled="userLoginForm.$invalid">Sign Up!</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="right-section">
+            <img src="https://www.inspectionsupport.net/wp-content/uploads/2014/07/LoginRed.jpg"/>
+        </div>
+    </div>

@@ -18,3 +18,4 @@ label.required:after, span.required:after{content: '*';position: relative;top: 0
 
 .succ_txt{color: #0ca70c;}
 .err_txt{color: #9f0706;}
+.pd_L15{padding-left: 15px;}

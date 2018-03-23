@@ -19,6 +19,11 @@ app.use(morgan('dev'));
 app.use('/scripts', express.static(__dirname + '/scripts'));
 app.use('/app', express.static(__dirname + '/app'));
 app.use('/css', express.static(__dirname + '/css'));
+
+// import api js file
+var api = require('./app/api-route/api')(app, express);
+app.use('/auth-api', api); // '/auth-api' is prefix. ie. localhost:8082/auth-api/signup
+
 app.get('/*', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });

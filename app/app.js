@@ -13,8 +13,18 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider,$locat
         },
         controller: "MainController"
     })
+    .when("/signup", {
+        templateUrl: () => "app/views/signup-page.html",
+        controller: "MainController",
+        controllerAs: "mctrl"
+    })
     .when("/login", {
         templateUrl: () => "app/views/login-page.html",
+        controller: "MainController",
+        controllerAs: "mctrl"
+    })
+    .when("/forgetPassword", {
+        templateUrl: () => "app/views/forget-password.html",
         controller: "MainController",
         controllerAs: "mctrl"
     })
