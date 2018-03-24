@@ -93,6 +93,29 @@ module.exports = function(app, express){
                 });
             }
         });
-    })    
+    });
+
+    // token varification
+    /*app.use(function(req, res, next){
+        console.log("some one loggedin with our app..");
+
+        var token = req.body.token || req.param('token') || req.headers['x-acess-token'];
+        // if token exist
+        if(token){
+            jsonwebtoken.verify(token, secretKey, function(err, decode){
+                if(err){
+                    res.status(403).send({ 
+                        success: false, 
+                        message: "It's seems like your session has expired"
+                    });
+                }
+            });
+        }else{
+            res.status(403).send({ 
+                success: false, 
+                message: "Not authorised user, token required."
+            });
+        }
+    });*/
     return api;
 };
